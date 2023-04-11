@@ -1,0 +1,20 @@
+.MuiBottomNavigationAction-root {
+    color: #2c2a2a;
+    letter-spacing: 1px;
+}
+
+.MuiBottomNavigationAction-label {
+    opacity: 1;
+}
+
+.MuiBottomNavigationAction-root.Mui-selected .MuiBottomNavigationAction-label,
+.MuiBottomNavigationAction-root.Mui-selected .MuiSvgIcon-root {
+    color: #000;
+    font-weight: normal;
+}
+
+.MuiBottomNavigationAction-root:hover .MuiSvgIcon-root,
+.MuiBottomNavigationAction-root:hover .MuiBottomNavigationAction-label {
+    color: #000 !important;
+    font-weight: bold !important;
+}
