@@ -64,34 +64,34 @@ export default function ImagesHome() {
                     <img src={home1} />
                 </div> */}
                 <div key="b">
-                    <img src={home2} />
+                    <img src={home14} />
                 </div>
                 <div key="c">
-                    <img src={home3} />
+                    <img src={home11} />
                 </div>
                 <div key="d">
-                    <img src={home4} />
+                    <img src={home3} />
                 </div>
                 <div key="e">
-                    <img src={home5} />
+                    <img src={home4} />
                 </div>
                 <div key="f">
-                    <img src={home6} />
+                    <img src={home5} />
                 </div>
                 <div key="g">
-                    <img src={home7} />
+                    <img src={home6} />
                 </div>
                 {/* <div key="h">
                     <img src={home8} />
                 </div> */}
                 <div key="i">
-                    <img src={home9} />
+                    <img src={home7} />
                 </div>
                 {/* <div key="j">
                     <img src={home10} />
                 </div> */}
                 <div key="k">
-                    <img src={home11} />
+                    <img src={home9} />
                 </div>
                 <div key="l">
                     <img src={home12} />

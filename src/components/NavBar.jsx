@@ -5,10 +5,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import React, { useState } from 'react';
 import Modal from "./FoodModal";
 import './NavBar.css';
+import UniversoPlantae from "./NatureModal";
 
 export default function NavBar() {
     const [drawerOpen, setDrawerOpen] = useState(false);
-    const [modalOpen, setModalOpen] = useState(false); //Agregar un estado para el modal
+    const [modalOpen, setModalOpen] = useState(false); //Agregar un estado para el modal alimentos
+    const [modalOpenUniversoPlantae, setModalOpenUniversoPlantae] = useState(false); //modal plantas
+
+
 
     const toggleDrawer = (open) => (event) => {
         setDrawerOpen(open);
@@ -57,20 +61,21 @@ export default function NavBar() {
                         }}
                     >
                         <Box sx={{ mr: 5 }}>
-                            <Typography variant="h6" className="nav-link">Retratos</Typography>
+                            <Typography variant="h6" className="nav-link">EVENTOS</Typography>
                         </Box>
                         <Box sx={{ mr: 5 }}>
-                            <Typography variant="h6" className="nav-link">Naturaleza</Typography>
+                            <Typography variant="h6" className="nav-link">MÚSICA Y TEATRO</Typography>
                         </Box>
                         <Box sx={{ mr: 5 }}>
-                            <Typography variant="h6" className="nav-link">Otras cosas</Typography>
+                            <Typography variant="h6" className="nav-link">SESIONES</Typography>
                         </Box>
                         <Box sx={{ mr: 5 }}>
-                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpen(true)}>Alimentos</Typography>
+                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpenUniversoPlantae(true)}>UNIVERSO PLANTAE</Typography>
                         </Box>
                         <Box sx={{ mr: 5 }}>
-                            <Typography variant="h6" className="nav-link">Boda</Typography>
+                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpen(true)}>ALIMENTOS</Typography>
                         </Box>
+
                     </Box>
 
                 </Toolbar>
@@ -83,6 +88,7 @@ export default function NavBar() {
                 </Drawer>
             </AppBar>
             <Modal open={modalOpen} onClose={() => setModalOpen(false)} /> {/* Agregar el componente Modal con el estado de modalOpen */}
+            <UniversoPlantae open={modalOpenUniversoPlantae} onClose={() => setModalOpenUniversoPlantae(false)} />
         </>
     );
 }

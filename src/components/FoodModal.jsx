@@ -1,5 +1,5 @@
 import React from 'react'
-import { Dialog, DialogTitle, DialogContent, DialogActions, IconButton } from '@mui/material'
+import { Dialog, DialogTitle, DialogContent, IconButton } from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"
