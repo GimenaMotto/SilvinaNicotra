@@ -1,16 +1,22 @@
 
-import { AppBar, Toolbar, Typography, IconButton, Icon, Box, Drawer, List, ListItem, ListItemText, Hidden } from "@mui/material";
-import InstagramIcon from '@mui/icons-material/Instagram';
+import { AppBar, Toolbar, Typography, IconButton, Box, Drawer, List, ListItem, ListItemText, Hidden } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import React, { useState } from 'react';
 import Modal from "./FoodModal";
 import './NavBar.css';
 import UniversoPlantae from "./NatureModal";
+import SessionModal from "./SessionModal";
+import MusicTheaterModal from "./MusicTheaterModal";
+import EventsModal from "./EventsModal";
+
 
 export default function NavBar() {
     const [drawerOpen, setDrawerOpen] = useState(false);
     const [modalOpen, setModalOpen] = useState(false); //Agregar un estado para el modal alimentos
     const [modalOpenUniversoPlantae, setModalOpenUniversoPlantae] = useState(false); //modal plantas
+    const [modalSession, setModalOpenSession] = useState(false)
+    const [modalMusicTheater, setModalOpenMusicTheater] = useState(false)
+    const [modalEvents, setModalOpenEvents] = useState(false)
 
 
 
@@ -27,13 +33,19 @@ export default function NavBar() {
         >
             <List>
                 <ListItem button>
-                    <ListItemText primary="Retratos" />
+                    <ListItemText primary="EVENTOS" />
                 </ListItem>
                 <ListItem button>
-                    <ListItemText primary="Alimentos" />
+                    <ListItemText primary="MÚSICA Y TEATRO" />
                 </ListItem>
                 <ListItem button>
-                    <ListItemText primary="Boda" />
+                    <ListItemText primary="SESIONES" />
+                </ListItem>
+                <ListItem button>
+                    <ListItemText primary="UNIVERSO PLANTAE" onClick={() => setModalOpenUniversoPlantae(true)} />
+                </ListItem>
+                <ListItem button>
+                    <ListItemText primary="ALIMENTOS" onClick={() => setModalOpen(true)} />
                 </ListItem>
             </List>
         </Box>
@@ -61,13 +73,13 @@ export default function NavBar() {
                         }}
                     >
                         <Box sx={{ mr: 5 }}>
-                            <Typography variant="h6" className="nav-link">EVENTOS</Typography>
+                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpenEvents(true)}>EVENTOS</Typography>
                         </Box>
                         <Box sx={{ mr: 5 }}>
-                            <Typography variant="h6" className="nav-link">MÚSICA Y TEATRO</Typography>
+                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpenMusicTheater(true)}>MÚSICA Y TEATRO</Typography>
                         </Box>
                         <Box sx={{ mr: 5 }}>
-                            <Typography variant="h6" className="nav-link">SESIONES</Typography>
+                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpenSession(true)}>SESIONES</Typography>
                         </Box>
                         <Box sx={{ mr: 5 }}>
                             <Typography variant="h6" className="nav-link" onClick={() => setModalOpenUniversoPlantae(true)}>UNIVERSO PLANTAE</Typography>
@@ -87,8 +99,11 @@ export default function NavBar() {
                     {list()}
                 </Drawer>
             </AppBar>
-            <Modal open={modalOpen} onClose={() => setModalOpen(false)} /> {/* Agregar el componente Modal con el estado de modalOpen */}
+            <Modal open={modalOpen} onClose={() => setModalOpen(false)} />
             <UniversoPlantae open={modalOpenUniversoPlantae} onClose={() => setModalOpenUniversoPlantae(false)} />
+            <SessionModal open={modalSession} onCLose={() => setModalOpenSession(false)} />
+            <MusicTheaterModal open={modalMusicTheater} onClose={() => setModalOpenMusicTheater(false)} />
+            <EventsModal open={modalEvents} onClose={() => setModalOpenEvents(false)} />
         </>
     );
 }
