@@ -1,19 +1,19 @@
 
-import { AppBar, Toolbar, Typography, IconButton, Box, Drawer, List, ListItem, ListItemText, Hidden } from "@mui/material";
-import MenuIcon from '@mui/icons-material/Menu';
-import React, { useState } from 'react';
-import Modal from "./FoodModal";
-import './NavBar.css';
-import UniversoPlantae from "./NatureModal";
-import SessionModal from "./SessionModal";
-import MusicTheaterModal from "./MusicTheaterModal";
-import EventsModal from "./EventsModal";
+import { AppBar, Toolbar, Typography, IconButton, Box, Drawer, List, ListItem, ListItemText, Hidden } from "@mui/material"
+import MenuIcon from '@mui/icons-material/Menu'
+import React, { useState } from 'react'
+import Modal from "./FoodModal"
+import './NavBar.css'
+import UniversoPlantae from "./NatureModal"
+import SessionModal from "./SessionModal"
+import MusicTheaterModal from "./MusicTheaterModal"
+import EventsModal from "./EventsModal"
 
 
 export default function NavBar() {
-    const [drawerOpen, setDrawerOpen] = useState(false);
-    const [modalOpen, setModalOpen] = useState(false); //Agregar un estado para el modal alimentos
-    const [modalOpenUniversoPlantae, setModalOpenUniversoPlantae] = useState(false); //modal plantas
+    const [drawerOpen, setDrawerOpen] = useState(false)
+    const [modalOpen, setModalOpen] = useState(false)
+    const [modalOpenUniversoPlantae, setModalOpenUniversoPlantae] = useState(false)
     const [modalSession, setModalOpenSession] = useState(false)
     const [modalMusicTheater, setModalOpenMusicTheater] = useState(false)
     const [modalEvents, setModalOpenEvents] = useState(false)
@@ -33,13 +33,13 @@ export default function NavBar() {
         >
             <List>
                 <ListItem button>
-                    <ListItemText primary="EVENTOS" />
+                    <ListItemText primary="EVENTOS" onClick={() => setModalOpenEvents(true)} />
                 </ListItem>
                 <ListItem button>
-                    <ListItemText primary="MÚSICA Y TEATRO" />
+                    <ListItemText primary="MÚSICA Y TEATRO" onClick={() => setModalOpenMusicTheater(true)} />
                 </ListItem>
                 <ListItem button>
-                    <ListItemText primary="SESIONES" />
+                    <ListItemText primary="SESIONES" onClick={() => setModalOpenSession(true)} />
                 </ListItem>
                 <ListItem button>
                     <ListItemText primary="UNIVERSO PLANTAE" onClick={() => setModalOpenUniversoPlantae(true)} />
@@ -53,7 +53,7 @@ export default function NavBar() {
 
     return (
         <>
-            <AppBar color="transparent" className="myAppBar">
+            <AppBar sx={{ backgroundColor: "rgba(255, 255, 255, 0.9)" }} className="myAppBar">
                 <Toolbar sx={{ display: "flex", alignItems: "center" }}>
                     <Hidden implementation="js" smUp>
                         <IconButton onClick={toggleDrawer(true)} sx={{ mr: 2 }}>
@@ -61,7 +61,7 @@ export default function NavBar() {
                         </IconButton>
                     </Hidden>
                     <Box sx={{ flexGrow: 1 }}>
-                        <Typography variant="h5" sx={{ fontWeight: "bold" }}>
+                        <Typography variant="h5" sx={{ fontWeight: "bold" }} color="black">
                             SILVINA NICOTRA
                         </Typography>
                     </Box>
@@ -73,19 +73,19 @@ export default function NavBar() {
                         }}
                     >
                         <Box sx={{ mr: 5 }}>
-                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpenEvents(true)}>EVENTOS</Typography>
+                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpenEvents(true)} color="black">EVENTOS</Typography>
                         </Box>
                         <Box sx={{ mr: 5 }}>
-                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpenMusicTheater(true)}>MÚSICA Y TEATRO</Typography>
+                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpenMusicTheater(true)} color="black">MÚSICA </Typography>
                         </Box>
                         <Box sx={{ mr: 5 }}>
-                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpenSession(true)}>SESIONES</Typography>
+                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpenSession(true)} color="black">SESIONES</Typography>
                         </Box>
                         <Box sx={{ mr: 5 }}>
-                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpenUniversoPlantae(true)}>UNIVERSO PLANTAE</Typography>
+                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpenUniversoPlantae(true)} color="black">UNIVERSO PLANTAE</Typography>
                         </Box>
                         <Box sx={{ mr: 5 }}>
-                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpen(true)}>ALIMENTOS</Typography>
+                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpen(true)} color="black">ALIMENTOS</Typography>
                         </Box>
 
                     </Box>
