@@ -14,11 +14,9 @@ import home9 from '../images/Favs/9.jpg'
 import home10 from '../images/Favs/10.jpg'
 import home11 from '../images/Favs/11.jpg'
 import home12 from '../images/Favs/12.jpg'
-import home13 from '../images/Favs/12.jpg'
+import home13 from '../images/Favs/13.jpg'
 import home14 from '../images/Favs/14.jpg'
-import home15 from '../images/Favs/15.jpg'
-import home16 from '../images/Favs/16.jpg'
-import home17 from '../images/Favs/17.jpg'
+
 
 
 import 'react-grid-layout/css/styles.css'
@@ -32,22 +30,21 @@ export default function ImagesHome() {
     const [layout, setLayout] = React.useState([
         { i: 'a', x: 0, y: 0, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
         { i: 'b', x: 1.5, y: 0, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'poesía', x: 0, y: 1.5, w: 3, h: 3, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'c', x: 1.5, y: 1.5, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'd', x: 0, y: 3, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'e', x: 1.5, y: 3, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'f', x: 0, y: 4.5, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'g', x: 1.5, y: 4.5, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'h', x: 0, y: 6, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'i', x: 1.5, y: 6, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'j', x: 0, y: 7.5, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'k', x: 1.5, y: 7.5, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'l', x: 0, y: 9, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'm', x: 1.5, y: 9, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'n', x: 0, y: 9.5, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'o', x: 1.5, y: 10, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'p', x: 0, y: 10.5, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'q', x: 1.5, y: 11, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'poesía', x: 0, y: 1.5, w: 3, h: 0.8, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'c', x: 1.5, y: 1.5, w: 2.5, h: 2.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'd', x: 0, y: 3, w: 2, h: 2, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'poesía1', x: 1.5, y: 3, w: 3, h: 0.8, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'e', x: 0, y: 4.5, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'f', x: 1.5, y: 4.5, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'g', x: 0, y: 6, w: 2, h: 2, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'h', x: 1.5, y: 6, w: 2, h: 2, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'i', x: 0, y: 7.5, w: 2, h: 2, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'j', x: 1.5, y: 7.5, w: 2, h: 2, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'k', x: 0, y: 9, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'l', x: 1.5, y: 9, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'm', x: 0, y: 9.5, w: 3, h: 3, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'n', x: 1.5, y: 9.5, w: 3, h: 3, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+
     ]);
 
 
@@ -74,11 +71,12 @@ export default function ImagesHome() {
                 <div key="b">
                     <img src={home2} />
                 </div>
-                <div key="poesía" style={{ gridColumnEnd: 'span 2' }}>
-                    <Typography variant="body1" sx={{ color: 'black', fontSize: '32px', margin: '0 80px' }}>
-                        Parar, fotografiar, observar, contemplar , volver a  <span style={{ fontWeight: 'bold', fontSize: '40px' }}>mirar</span>, respirar y seguir. <br /><br /> Ir por lo que nuestra mirada nos va mostrando, cómo despeje del propio andar, del camino personal, para avanzar en eso que anhelamos. <br /><br />
-                        Frenar en los detalles, en esas simples pequeñas cosas que son como una pausa en nuestro andar y nos hacen avanzar en la interacción con la otredad.<br /><br />
-                        A mis ojos les gusta narrar, contar historias, detenerse en lo que acontece en un fuego, en un andar, en un atardecer, en un encuentro.
+                <div key="poesía" style={{ gridColumn: '1 / -1', textAlign: 'center' }}>
+                    <Typography variant="body1" sx={{ color: 'black', fontSize: '26px', margin: '0 80px' }}>
+                        <span style={{ fontWeight: 'bold', fontSize: '46px' }}>Parar</span>, fotografiar,
+                        <span style={{ fontWeight: 'bold', fontSize: '32px' }}> observar</span>, contemplar,
+                        volver a <span style={{ fontWeight: 'bold', fontSize: '36px' }}>mirar</span>, <span style={{ fontWeight: 'bold', fontSize: '44px' }}>respirar
+                        </span> y <span style={{ fontWeight: 'bold', fontSize: '38px' }}>seguir</span>.
                     </Typography>
                 </div>
                 <div key="c">
@@ -87,17 +85,25 @@ export default function ImagesHome() {
                 <div key="d">
                     <img src={home4} />
                 </div>
+                <div key="poesía1" style={{ gridColumn: '1 / -1', textAlign: 'center' }}>
+                    <Typography variant="body1" sx={{ color: 'black', fontSize: '26px', margin: '0 80px' }}>
+                        <span style={{ fontWeight: 'bold', fontSize: '44px' }}>Ir</span> por lo que nuestra <span style={{ fontWeight: 'bold', fontSize: '32px' }}>mirada</span> nos va mostrando, cómo despeje del propio <span style={{ fontWeight: 'bold', fontSize: '38px' }}>andar</span>,
+                        del <span style={{ fontWeight: 'bold', fontSize: '30px' }}>camino personal</span>, para <span style={{ fontWeight: 'bold', fontSize: '44px' }}>avanzar</span> en eso que anhelamos.
+                        {/* Frenar en los detalles, en esas simples pequeñas cosas que son como una pausa en nuestro andar y nos hacen avanzar en la interacción con la otredad.<br /><br />
+                        A mis ojos les gusta narrar, contar historias, detenerse en lo que acontece en un fuego, en un andar, en un atardecer, en un encuentro. */}
+                    </Typography>
+                </div>
                 <div key="e">
                     <img src={home5} />
                 </div>
                 <div key="f">
                     <img src={home6} />
                 </div>
-                <div key="g">
+                <div key="g" style={{ display: 'flex', justifyContent: 'center', alignItems: "center" }}>
                     <img src={home7} />
                 </div>
 
-                <div key="h">
+                <div key="h" style={{ display: 'flex', justifyContent: 'center', alignItems: "center" }}>
                     <img src={home8} />
                 </div>
                 <div key="i">
@@ -118,15 +124,8 @@ export default function ImagesHome() {
                 <div key="n">
                     <img src={home14} />
                 </div>
-                <div key="o">
-                    <img src={home15} />
-                </div>
-                <div key="p">
-                    <img src={home16} />
-                </div>
-                <div key="o">
-                    <img src={home17} />
-                </div>
+
+
 
             </ResponsiveReactGridLayout>
         </Box>
