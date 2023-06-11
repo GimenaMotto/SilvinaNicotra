@@ -33,7 +33,7 @@ export default function NavBar() {
         >
             <List>
                 <ListItem button>
-                    <ListItemText primary="EVENTOS" onClick={() => setModalOpenEvents(true)} />
+                    <ListItemText primary="MARCHAS" onClick={() => setModalOpenEvents(true)} />
                 </ListItem>
                 <ListItem button>
                     <ListItemText primary="MÚSICA Y TEATRO" onClick={() => setModalOpenMusicTheater(true)} />
@@ -46,6 +46,9 @@ export default function NavBar() {
                 </ListItem>
                 <ListItem button>
                     <ListItemText primary="ALIMENTOS" onClick={() => setModalOpen(true)} />
+                </ListItem>
+                <ListItem button>
+                    <ListItemText primary="AUDIOVISUALES" />
                 </ListItem>
             </List>
         </Box>
@@ -60,6 +63,7 @@ export default function NavBar() {
                             <MenuIcon />
                         </IconButton>
                     </Hidden>
+
                     <Box sx={{ flexGrow: 1 }}>
                         <Typography variant="h5" sx={{ fontWeight: "bold" }} color="black">
                             SILVINA NICOTRA
@@ -73,10 +77,10 @@ export default function NavBar() {
                         }}
                     >
                         <Box sx={{ mr: 5 }}>
-                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpenEvents(true)} color="black">EVENTOS</Typography>
+                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpenEvents(true)} color="black">MARCHAS</Typography>
                         </Box>
                         <Box sx={{ mr: 5 }}>
-                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpenMusicTheater(true)} color="black">MÚSICA </Typography>
+                            <Typography variant="h6" className="nav-link" onClick={() => setModalOpenMusicTheater(true)} color="black">MÚSICA Y TEATRO</Typography>
                         </Box>
                         <Box sx={{ mr: 5 }}>
                             <Typography variant="h6" className="nav-link" onClick={() => setModalOpenSession(true)} color="black">SESIONES</Typography>
@@ -87,7 +91,9 @@ export default function NavBar() {
                         <Box sx={{ mr: 5 }}>
                             <Typography variant="h6" className="nav-link" onClick={() => setModalOpen(true)} color="black">ALIMENTOS</Typography>
                         </Box>
-
+                        <Box sx={{ mr: 1 }}>
+                            <Typography variant="h6" className="nav-link" color="black">AUDIOVISUALES</Typography>
+                        </Box>
                     </Box>
 
                 </Toolbar>
@@ -101,7 +107,7 @@ export default function NavBar() {
             </AppBar>
             <Modal open={modalOpen} onClose={() => setModalOpen(false)} />
             <UniversoPlantae open={modalOpenUniversoPlantae} onClose={() => setModalOpenUniversoPlantae(false)} />
-            <SessionModal open={modalSession} onCLose={() => setModalOpenSession(false)} />
+            <SessionModal open={modalSession} onClose={() => setModalOpenSession(false)} />
             <MusicTheaterModal open={modalMusicTheater} onClose={() => setModalOpenMusicTheater(false)} />
             <EventsModal open={modalEvents} onClose={() => setModalOpenEvents(false)} />
         </>

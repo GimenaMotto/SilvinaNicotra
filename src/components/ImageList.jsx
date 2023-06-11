@@ -37,13 +37,15 @@ export default function ImagesHome() {
         { i: 'e', x: 0, y: 4.5, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
         { i: 'f', x: 1.5, y: 4.5, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
         { i: 'g', x: 0, y: 6, w: 2, h: 2, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'h', x: 1.5, y: 6, w: 2, h: 2, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'i', x: 0, y: 7.5, w: 2, h: 2, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'j', x: 1.5, y: 7.5, w: 2, h: 2, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'k', x: 0, y: 9, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'l', x: 1.5, y: 9, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'm', x: 0, y: 9.5, w: 3, h: 3, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
-        { i: 'n', x: 1.5, y: 9.5, w: 3, h: 3, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'poesía2', x: 1.5, y: 6, w: 3, h: 0.8, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'h', x: 0, y: 7.5, w: 2, h: 2, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'i', x: 1.5, y: 7.5, w: 2, h: 2, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'j', x: 0, y: 9, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'k', x: 1.5, y: 9, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'poesía3', x: 0, y: 9.5, w: 3, h: 0.8, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'l', x: 1.5, y: 9.5, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'm', x: 0, y: 10, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
+        { i: 'n', x: 1.5, y: 10.5, w: 3, h: 3, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
 
     ]);
 
@@ -89,8 +91,7 @@ export default function ImagesHome() {
                     <Typography variant="body1" sx={{ color: 'black', fontSize: '26px', margin: '0 80px' }}>
                         <span style={{ fontWeight: 'bold', fontSize: '44px' }}>Ir</span> por lo que nuestra <span style={{ fontWeight: 'bold', fontSize: '32px' }}>mirada</span> nos va mostrando, cómo despeje del propio <span style={{ fontWeight: 'bold', fontSize: '38px' }}>andar</span>,
                         del <span style={{ fontWeight: 'bold', fontSize: '30px' }}>camino personal</span>, para <span style={{ fontWeight: 'bold', fontSize: '44px' }}>avanzar</span> en eso que anhelamos.
-                        {/* Frenar en los detalles, en esas simples pequeñas cosas que son como una pausa en nuestro andar y nos hacen avanzar en la interacción con la otredad.<br /><br />
-                        A mis ojos les gusta narrar, contar historias, detenerse en lo que acontece en un fuego, en un andar, en un atardecer, en un encuentro. */}
+
                     </Typography>
                 </div>
                 <div key="e">
@@ -102,7 +103,15 @@ export default function ImagesHome() {
                 <div key="g" style={{ display: 'flex', justifyContent: 'center', alignItems: "center" }}>
                     <img src={home7} />
                 </div>
-
+                <div key="poesía2" style={{ gridColumn: '1 / -1', textAlign: 'center' }}>
+                    <Typography variant="body1" sx={{ color: 'black', fontSize: '26px', margin: '0 80px' }}>
+                        <span style={{ fontWeight: 'bold', fontSize: '40px' }}>Frenar</span> en los <span style={{ fontWeight: 'bold', fontSize: '32px' }}>detalles, </span> en esas <span style={{ fontWeight: 'bold', fontSize: '38px' }}>simples, </span>
+                        <span style={{ fontWeight: 'bold', fontSize: '20px' }}>pequeñas </span> <span style={{ fontWeight: 'bold', fontSize: '30px' }}>cosas</span> que son como una <span style={{ fontWeight: 'bold', fontSize: '38px' }}>pausa</span> en nuestro
+                        <span style={{ fontWeight: 'bold', fontSize: '30px' }}> andar</span> y nos hacen <span style={{ fontWeight: 'bold', fontSize: '44px' }}>avanzar</span> en la interacción con la otredad.
+                        {/* Frenar en los detalles, en esas simples pequeñas cosas que son como una pausa en nuestro andar y nos hacen avanzar en la interacción con la otredad.<br /><br />
+                        A mis ojos les gusta narrar, contar historias, detenerse en lo que acontece en un fuego, en un andar, en un atardecer, en un encuentro. */}
+                    </Typography>
+                </div>
                 <div key="h" style={{ display: 'flex', justifyContent: 'center', alignItems: "center" }}>
                     <img src={home8} />
                 </div>
@@ -114,6 +123,14 @@ export default function ImagesHome() {
                 </div>
                 <div key="k">
                     <img src={home11} />
+                </div>
+                <div key="poesía3" style={{ gridColumn: '1 / -1', textAlign: 'center' }}>
+                    <Typography variant="body1" sx={{ color: 'black', fontSize: '26px', margin: '0 80px' }}>
+                        A <span style={{ fontWeight: 'bold', fontSize: '27px' }}>mis </span><span style={{ fontWeight: 'bold', fontSize: '40px' }}>ojos</span> les gusta <span style={{ fontWeight: 'bold', fontSize: '32px' }}>narrar, </span><span style={{ fontWeight: 'bold', fontSize: '38px' }}>contar </span>
+                        <span style={{ fontWeight: 'bold', fontSize: '30px' }}>historias, </span> <span style={{ fontWeight: 'bold', fontSize: '34px' }}>detenerse</span> en lo que  <span style={{ fontWeight: 'bold', fontSize: '28px' }}>acontece</span> en un <span style={{ fontWeight: 'bold', fontSize: '38px' }}>fuego, </span> en un
+                        <span style={{ fontWeight: 'bold', fontSize: '30px' }}> andar, </span> en un <span style={{ fontWeight: 'bold', fontSize: '36px' }}>atardecer, </span> en un <span style={{ fontWeight: 'bold', fontSize: '44px' }}>encuentro</span>.
+
+                    </Typography>
                 </div>
                 <div key="l">
                     <img src={home12} />

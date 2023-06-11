@@ -4,7 +4,6 @@ import CloseIcon from '@mui/icons-material/Close'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import './SessionModal.css'
 import img1 from '../images/Musicateatro/1.jpg'
 import img2 from '../images/Musicateatro/2.jpg'
 import img3 from '../images/Musicateatro/3.jpg'
@@ -17,12 +16,11 @@ import img9 from '../images/Musicateatro/9.jpg'
 import img10 from '../images/Musicateatro/10.jpg'
 import img11 from '../images/Musicateatro/11.jpg'
 import img12 from '../images/Musicateatro/12.jpg'
-import img13 from '../images/Musicateatro/13.jpg'
-import img14 from '../images/Musicateatro/14.JPG'
+
 
 
 export default function MusicTheaterModal({ open, onClose }) {
-    const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14];
+    const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12];
 
     const settings = {
         dots: true,

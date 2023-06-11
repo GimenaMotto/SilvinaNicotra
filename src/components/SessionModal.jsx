@@ -4,28 +4,21 @@ import CloseIcon from '@mui/icons-material/Close'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import './SessionModal.css'
 import img1 from '../images/Sesiones/1.jpg'
 import img2 from '../images/Sesiones/2.jpg'
 import img3 from '../images/Sesiones/3.jpg'
 import img4 from '../images/Sesiones/4.jpg'
 import img5 from '../images/Sesiones/5.jpg'
-import img6 from '../images/Sesiones/6.jpg'
-import img7 from '../images/Sesiones/7.jpg'
 import img8 from '../images/Sesiones/8.jpg'
-import img9 from '../images/Sesiones/9.jpg'
 import img10 from '../images/Sesiones/10.jpg'
 import img11 from '../images/Sesiones/11.jpg'
 import img12 from '../images/Sesiones/12.jpg'
 import img13 from '../images/Sesiones/13.JPG'
 import img14 from '../images/Sesiones/14.jpg'
 import img15 from '../images/Sesiones/15.jpg'
-import img16 from '../images/Sesiones/16.jpg'
-import img17 from '../images/Sesiones/17.jpg'
-
 
 export default function SessionModal({ open, onClose }) {
-    const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17];
+    const images = [img1, img2, img3, img4, img5, img8, img10, img11, img12, img13, img14, img15];
 
     const settings = {
         dots: true,
@@ -96,3 +89,4 @@ export default function SessionModal({ open, onClose }) {
         </Dialog>
     );
 }
+
