@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 import { AppBar, Toolbar, Typography, IconButton, Box, Drawer, List, ListItem, ListItemText, Hidden } from "@mui/material"
 import MenuIcon from '@mui/icons-material/Menu'
 import React, { useState } from 'react'
@@ -65,9 +65,11 @@ export default function NavBar() {
                     </Hidden>
 
                     <Box sx={{ flexGrow: 1 }}>
-                        <Typography variant="h5" sx={{ fontWeight: "bold" }} color="black">
-                            SILVINA NICOTRA
-                        </Typography>
+                        <Link to='/' className="no-underline">
+                            <Typography variant="h5" sx={{ fontWeight: "bold" }} color="black" >
+                                SILVINA NICOTRA
+                            </Typography>
+                        </Link>
                     </Box>
                     <Box
                         sx={{
@@ -76,23 +78,30 @@ export default function NavBar() {
                             justifyContent: "center",
                         }}
                     >
-                        <Box sx={{ mr: 5 }}>
+                        <Box sx={{ mr: 4 }}>
                             <Typography variant="h6" className="nav-link" onClick={() => setModalOpenEvents(true)} color="black">MARCHAS</Typography>
                         </Box>
-                        <Box sx={{ mr: 5 }}>
+                        <Box sx={{ mr: 4 }}>
                             <Typography variant="h6" className="nav-link" onClick={() => setModalOpenMusicTheater(true)} color="black">MÚSICA Y TEATRO</Typography>
                         </Box>
-                        <Box sx={{ mr: 5 }}>
+                        <Box sx={{ mr: 4 }}>
                             <Typography variant="h6" className="nav-link" onClick={() => setModalOpenSession(true)} color="black">SESIONES</Typography>
                         </Box>
-                        <Box sx={{ mr: 5 }}>
+                        <Box sx={{ mr: 4 }}>
                             <Typography variant="h6" className="nav-link" onClick={() => setModalOpenUniversoPlantae(true)} color="black">UNIVERSO PLANTAE</Typography>
                         </Box>
-                        <Box sx={{ mr: 5 }}>
+                        <Box sx={{ mr: 4 }}>
                             <Typography variant="h6" className="nav-link" onClick={() => setModalOpen(true)} color="black">ALIMENTOS</Typography>
                         </Box>
+                        <Box sx={{ mr: 4 }}>
+                            <Link to='/audiovisuales' className="no-underline">
+                                <Typography variant="h6" className="nav-link" color="black">AUDIOVISUALES</Typography>
+                            </Link>
+                        </Box>
                         <Box sx={{ mr: 1 }}>
-                            <Typography variant="h6" className="nav-link" color="black">AUDIOVISUALES</Typography>
+                            <Link to='/sobremí' className="no-underline">
+                                <Typography variant="h6" className="nav-link" color="black">SOBRE MÍ</Typography>
+                            </Link>
                         </Box>
                     </Box>
 
