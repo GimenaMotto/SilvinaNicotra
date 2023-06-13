@@ -47,9 +47,16 @@ export default function NavBar() {
                 <ListItem button>
                     <ListItemText primary="ALIMENTOS" onClick={() => setModalOpen(true)} />
                 </ListItem>
-                <ListItem button>
-                    <ListItemText primary="AUDIOVISUALES" />
-                </ListItem>
+                <Link to="/audiovisuales" className="no-underline">
+                    <ListItem button>
+                        <ListItemText primary="AUDIOVISUALES" />
+                    </ListItem>
+                </Link>
+                <Link to="/sobremí" className="no-underline">
+                    <ListItem button>
+                        <ListItemText primary="SOBRE MÍ" />
+                    </ListItem>
+                </Link>
             </List>
         </Box>
     );

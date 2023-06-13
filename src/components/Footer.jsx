@@ -29,8 +29,8 @@ export default function Footer() {
                 }}
 
             >
-                <BottomNavigationAction label="12345678" icon={<LocalPhoneIcon />} />
-                <BottomNavigationAction label="Email" icon={<EmailIcon />} />
+                <BottomNavigationAction label="341 3741119" icon={<LocalPhoneIcon />} />
+                <BottomNavigationAction label="silvinanicotra1@gmail.com" icon={<EmailIcon />} />
                 <BottomNavigationAction
                     label="/elmirar.desil"
                     icon={<InstagramIcon />}

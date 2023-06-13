@@ -28,3 +28,10 @@
 .react-grid-item .react-resizable-handle {
     display: none;
 }
+
+@media (max-width: 768px) {
+    .poesía-text {
+        font-size: 18px;
+        margin: 40px 20px;
+    }
+}
