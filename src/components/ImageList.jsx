@@ -1,6 +1,8 @@
 import React from 'react'
 import { Box, Typography } from "@mui/material"
 import { Responsive, WidthProvider } from 'react-grid-layout'
+import { useMediaQuery } from '@mui/material';
+
 
 import home1 from '../images/Favs/1.jpg'
 import home2 from '../images/Favs/2.jpg'
@@ -26,6 +28,8 @@ import './ImageList.css'
 const ResponsiveReactGridLayout = WidthProvider(Responsive)
 
 export default function ImagesHome() {
+
+    const isMobile = useMediaQuery((theme) => theme.breakpoints.down('sm'));
 
     const [layout, setLayout] = React.useState([
         { i: 'a', x: 0, y: 0, w: 1.5, h: 1.5, resizeHandles: ['sw', 'nw', 'se', 'ne'] },
@@ -59,7 +63,7 @@ export default function ImagesHome() {
     return (
         <Box sx={{ marginTop: "80px" }}>
             <ResponsiveReactGridLayout
-                className="layout"
+                className={`layout ${isMobile ? 'mobile-layout' : ''}`} // Agrega la clase "mobile-layout" cuando estés en modo móvil
                 layouts={{ lg: layout }}
                 breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
                 cols={{ lg: 3, md: 3, sm: 2, xs: 1, xxs: 1 }}
@@ -67,13 +71,13 @@ export default function ImagesHome() {
                 onLayoutChange={handleLayoutChange}
             >
 
-                <div key="a">
+                <div key="a" style={{ width: '100%', height: '100%' }}>
                     <img src={home1} />
                 </div>
-                <div key="b">
+                <div key="b" style={{ width: '100%', height: '100%' }}>
                     <img src={home2} />
                 </div>
-                <div key="poesía" style={{ gridColumn: '1 / -1', textAlign: 'center' }}>
+                <div key="poesía" style={{ gridColumn: '1 / -1', textAlign: 'center', marginTop: isMobile ? '50px' : 0 }}>
 
                     <Typography variant="body1" sx={{ color: 'black', fontSize: '23px', margin: '0 80px' }}>
                         <span style={{ fontWeight: 'bold', fontSize: '38px' }}>Parar</span>, fotografiar,
@@ -98,7 +102,7 @@ export default function ImagesHome() {
                     </Typography>
 
                 </div>
-                <div key="e">
+                <div key="e" style={{ marginTop: isMobile ? '50px' : 0 }}>
                     <img src={home5} />
                 </div>
                 <div key="f">
@@ -130,7 +134,7 @@ export default function ImagesHome() {
                 </div>
                 <div key="poesía3" style={{ gridColumn: '1 / -1', textAlign: 'center' }}>
 
-                    <Typography variant="body1" sx={{ color: 'black', fontSize: '23px', margin: '0 80px' }}>
+                    <Typography variant="body1" sx={{ color: 'black', fontSize: '23px', margin: '0 80px', marginTop: isMobile ? '150px' : 0 }}>
                         A <span style={{ fontWeight: 'bold', fontSize: '27px' }}>mis </span><span style={{ fontWeight: 'bold', fontSize: '32px' }}>ojos</span> les gusta <span style={{ fontWeight: 'bold', fontSize: '28px' }}>narrar, </span><span style={{ fontWeight: 'bold', fontSize: '26px' }}>contar </span>
                         <span style={{ fontWeight: 'bold', fontSize: '28px' }}>historias, </span> <span style={{ fontWeight: 'bold', fontSize: '32px' }}>detenerse</span> en lo que  <span style={{ fontWeight: 'bold', fontSize: '29px' }}>acontece</span> en un <span style={{ fontWeight: 'bold', fontSize: '38px' }}>fuego, </span> en un
                         <span style={{ fontWeight: 'bold', fontSize: '30px' }}> andar, </span> en un <span style={{ fontWeight: 'bold', fontSize: '35px' }}>atardecer, </span> en un <span style={{ fontWeight: 'bold', fontSize: '38px' }}>encuentro</span>.
@@ -138,10 +142,10 @@ export default function ImagesHome() {
                     </Typography>
 
                 </div>
-                <div key="l">
+                <div key="l" style={{ marginTop: isMobile ? '150px' : 0 }}>
                     <img src={home12} />
                 </div>
-                <div key="m">
+                <div key="m" style={{ marginTop: isMobile ? '20px' : 0 }}>
                     <img src={home13} />
                 </div>
                 <div key="n">

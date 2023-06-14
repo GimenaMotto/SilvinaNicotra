@@ -29,9 +29,19 @@
     display: none;
 }
 
-@media (max-width: 768px) {
-    .poesía-text {
-        font-size: 18px;
-        margin: 40px 20px;
-    }
+.mobile-layout .layout div {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mobile-layout .layout div img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.mobile-layout .layout div .MuiTypography-root {
+    margin: 20px;
 }
