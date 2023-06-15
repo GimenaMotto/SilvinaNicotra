@@ -7,7 +7,7 @@ import AppRoutes from './routes/AppRoutes';
 
 const theme = createTheme({
   typography: {
-    fontFamily: 'Gafata, sans- serif',
+    fontFamily: 'Barlow, sans- serif',
   },
 });
 

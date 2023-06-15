@@ -120,7 +120,7 @@ export default function ImagesHome() {
                     </Typography>
 
                 </div>
-                <div key="h" style={{ display: 'flex', justifyContent: 'center', alignItems: "center" }}>
+                <div key="h" style={{ display: 'flex', justifyContent: 'center', alignItems: "center", marginTop: isMobile ? '20px' : 0 }}>
                     <img src={home8} />
                 </div>
                 <div key="i">
@@ -134,7 +134,7 @@ export default function ImagesHome() {
                 </div>
                 <div key="poesía3" style={{ gridColumn: '1 / -1', textAlign: 'center' }}>
 
-                    <Typography variant="body1" sx={{ color: 'black', fontSize: '23px', margin: '0 80px', marginTop: isMobile ? '150px' : 0 }}>
+                    <Typography variant="body1" sx={{ color: 'black', fontSize: '23px', margin: '0 80px', marginTop: isMobile ? '200px' : 0 }}>
                         A <span style={{ fontWeight: 'bold', fontSize: '27px' }}>mis </span><span style={{ fontWeight: 'bold', fontSize: '32px' }}>ojos</span> les gusta <span style={{ fontWeight: 'bold', fontSize: '28px' }}>narrar, </span><span style={{ fontWeight: 'bold', fontSize: '26px' }}>contar </span>
                         <span style={{ fontWeight: 'bold', fontSize: '28px' }}>historias, </span> <span style={{ fontWeight: 'bold', fontSize: '32px' }}>detenerse</span> en lo que  <span style={{ fontWeight: 'bold', fontSize: '29px' }}>acontece</span> en un <span style={{ fontWeight: 'bold', fontSize: '38px' }}>fuego, </span> en un
                         <span style={{ fontWeight: 'bold', fontSize: '30px' }}> andar, </span> en un <span style={{ fontWeight: 'bold', fontSize: '35px' }}>atardecer, </span> en un <span style={{ fontWeight: 'bold', fontSize: '38px' }}>encuentro</span>.
@@ -142,10 +142,10 @@ export default function ImagesHome() {
                     </Typography>
 
                 </div>
-                <div key="l" style={{ marginTop: isMobile ? '150px' : 0 }}>
+                <div key="l" style={{ marginTop: isMobile ? '220px' : 0 }}>
                     <img src={home12} />
                 </div>
-                <div key="m" style={{ marginTop: isMobile ? '20px' : 0 }}>
+                <div key="m" style={{ marginTop: isMobile ? '80px' : 0 }}>
                     <img src={home13} />
                 </div>
                 <div key="n">

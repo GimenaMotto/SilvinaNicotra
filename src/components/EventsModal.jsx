@@ -23,7 +23,7 @@ import img17 from '../images/Eventos/17.JPG'
 import img18 from '../images/Eventos/18.JPG'
 
 export default function EventsModal({ open, onClose }) {
-    const images = [img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18];
+    const images = [img9, img10, img4, img5, img6, img7, img8, img3, img11, img12, img13, img14, img15, img16, img17, img18];
 
     const settings = {
         dots: true,

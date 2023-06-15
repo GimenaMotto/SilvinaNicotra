@@ -18,7 +18,7 @@ import img14 from '../images/Sesiones/14.jpg'
 import img15 from '../images/Sesiones/15.jpg'
 
 export default function SessionModal({ open, onClose }) {
-    const images = [img1, img2, img3, img4, img5, img8, img10, img11, img12, img13, img14, img15];
+    const images = [img1, img2, img3, img4, img5, img10, img11, img12, img13, img14, img15, img8];
 
     const settings = {
         dots: true,

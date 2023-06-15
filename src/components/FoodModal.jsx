@@ -7,17 +7,16 @@ import "slick-carousel/slick/slick-theme.css"
 import './FoodModal.css'
 import img1 from '../images/Alimentos/alimentos1.JPG'
 import img2 from '../images/Alimentos/alimentos2.JPG'
-import img3 from '../images/Alimentos/alimentos3.jpg'
-import img4 from '../images/Alimentos/alimentos4.JPG'
+import img3 from '../images/Alimentos/alimentos3.JPG'
+import img4 from '../images/Alimentos/alimentos4.jpg'
 import img5 from '../images/Alimentos/alimentos5.JPG'
-import img6 from '../images/Alimentos/alimentos6.JPG'
-import img7 from '../images/Alimentos/alimentos7.JPG'
-import img8 from '../images/Alimentos/alimentos8.JPG'
-import img9 from '../images/Alimentos/alimentos9.jpg'
-import img10 from '../images/Alimentos/alimentos10.jpg'
+import img6 from '../images/Alimentos/alimentos6.jpg'
+import img7 from '../images/Alimentos/alimentos7.jpg'
+import img8 from '../images/Alimentos/alimentos8.jpg'
+
 
 export default function Modal({ open, onClose }) {
-    const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
+    const images = [img1, img2, img3, img4, img5, img6, img7, img8];
 
     const settings = {
         dots: true,

@@ -20,7 +20,7 @@ const AboutMe = () => {
                     <Grid item xs={12} sm={6}>
                         <CardContent>
                             <Typography variant="body1" sx={{ fontSize: "1.2rem" }}>
-                                &nbsp;Nací en la ciudad de Rosario.<br />
+                                &nbsp;&nbsp;&nbsp;Nací en la ciudad de Rosario.<br />
                                 &nbsp;&nbsp;&nbsp;En 5to grado por un taller de fotografía al que me anoté y que me obsequiaron una cámara Konica. En 2007 comencé a estudiar fotografía en la Escuela de Artes Plásticas Manuel Musto. Allí trabajé en el laboratorio aprendiendo fotografía analógica en blanco y negro con Andrea Ostera.
                                 También en esa institución participé en talleres de pintura, serigrafía con Hugo Cava, historia del arte contemporáneo con Nancy Rojas y heliocopia con Mabel Rodríguez.<br />
                                 &nbsp;&nbsp;&nbsp;Participé en diversos talleres sobre producción con Norberto Puzzolo, Gisela Volá de la subcooperativa de fotógrafos y Gustavo Fritegotto, este último sobre el Archivo familiar.<br />

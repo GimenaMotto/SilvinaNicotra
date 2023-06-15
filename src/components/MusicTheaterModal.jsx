@@ -20,7 +20,7 @@ import img12 from '../images/Musicateatro/12.jpg'
 
 
 export default function MusicTheaterModal({ open, onClose }) {
-    const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12];
+    const images = [img7, img8, img9, img10, img11, img12, img1, img2, img3, img4, img5, img6];
 
     const settings = {
         dots: true,
