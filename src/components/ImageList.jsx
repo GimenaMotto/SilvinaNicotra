@@ -13,7 +13,7 @@ import home6 from '../images/Favs/6.jpg'
 import home7 from '../images/Favs/7.jpg'
 import home8 from '../images/Favs/8.jpg'
 import home9 from '../images/Favs/9.jpg'
-import home10 from '../images/Favs/10.jpg'
+// import home10 from '../images/Favs/10.jpg'
 import home11 from '../images/Favs/11.jpg'
 import home12 from '../images/Favs/12.jpg'
 import home13 from '../images/Favs/13.jpg'
@@ -126,9 +126,7 @@ export default function ImagesHome() {
                 <div key="i">
                     <img src={home9} />
                 </div>
-                <div key="j">
-                    <img src={home10} />
-                </div>
+
                 <div key="k">
                     <img src={home11} />
                 </div>
