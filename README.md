@@ -28,8 +28,8 @@ This project is a Single Page Interface built with React and Material UI, design
 
 ## Screenshots
 
-![Photograph 1](images/photo1.jpg)
-![Photograph 2](images/photo2.jpg)
+![Photograph 1](src/images/photo1.jpg)
+![Photograph 2](src/images/photo2.jpg)
 
 ## Contact
 
